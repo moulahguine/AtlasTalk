@@ -22,7 +22,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
   background-color: #e6e9fa;
 }
 
@@ -54,6 +53,11 @@ picture {
 .left_side {
   grid-column: span 5;
   overflow: hidden;
+}
+@media (max-width: 836px) {
+  .left_side {
+    grid-column: span 12;
+  }
 }
 .left_side header.logo {
   display: flex;
@@ -88,20 +92,50 @@ picture {
 }
 .left_side .hero_image img {
   position: absolute;
-  height: -moz-min-content;
-  height: min-content;
-  top: -150px;
-  left: 75px;
+  top: -100px;
+  left: 100px;
   z-index: 5;
   filter: blur(9px);
+  transform: scale(1);
+  animation: fly 2s infinite alternate-reverse;
+}
+@media (max-width: 836px) {
+  .left_side .hero_image img {
+    left: 0px;
+  }
+}
+@keyframes fly {
+  from {
+    top: -110px;
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+    top: -90px;
+  }
 }
 
 .right_side {
+  grid-column: span 7;
+  position: relative;
+  z-index: 11111;
   background-color: #fff;
   width: clamp(300px, 50vw, 740px);
   border-radius: 30px 0 0 30px;
   padding: 100px;
-  grid-column: span 7;
+}
+@media (max-width: 836px) {
+  .right_side {
+    padding: 40px 30px;
+    grid-column: span 12;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+}
+@media (max-width: 913px) {
+  .right_side {
+    padding: 40px 30px;
+  }
 }
 .right_side .co_title {
   color: #525252;
@@ -145,6 +179,11 @@ picture {
   display: flex;
   gap: 40px;
 }
+@media (max-width: 376px) {
+  .auth_options {
+    flex-direction: column;
+  }
+}
 .auth_options .opt_btn {
   border-radius: 4px;
   border: solid 1px #e6e9fa;
@@ -161,6 +200,11 @@ picture {
   gap: 10px;
   font-size: 0.85em;
   color: #a1a1a1;
+}
+@media (max-width: 1250px) {
+  .auth_options .opt_btn a {
+    font-size: 0.6em;
+  }
 }
 .auth_options .opt_btn a > img {
   width: 17px;
@@ -226,4 +270,10 @@ form .form_group input {
   height: 700px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+@media (max-width: 836px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
 }/*# sourceMappingURL=style.css.map */

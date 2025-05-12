@@ -1,10 +1,15 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 
 // start auth options "google" && "github"
 .auth_options {
   display: flex;
   gap: 40px;
+  @media (max-width: $small-screen) {
+    flex-direction: column;
+  }
+
   // start google and github btns
   .opt_btn {
     border-radius: 4px;
@@ -22,6 +27,9 @@
       gap: 10px;
       font-size: 0.85em;
       color: $text-gray;
+      @media (max-width: $small-desktop) {
+        font-size: 0.6em;
+      }
       //logo
       > img {
         width: 17px;
