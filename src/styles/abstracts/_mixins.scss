@@ -4,7 +4,15 @@
   align-items: center;
 }
 
-@mixin flexCenter {
+@mixin gridCenter {
   display: grid;
   place-items: center;
+}
+
+@mixin grid-column-span($span) {
+  @if $span >= 1 and $span <= 12 {
+    grid-column: span $span;
+  } @else {
+    @warn "Column span `#{$span}` is out of range (1–12).";
+  }
 }

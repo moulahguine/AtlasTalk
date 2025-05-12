@@ -1,9 +1,13 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/colors" as *;
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-transform: capitalize;
 }
 
 html {
@@ -17,6 +21,10 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include flexCenter;
+  width: 100%;
+  height: 100vh;
+  background-color: $ghost-white;
 }
 
 ul,
