@@ -68,7 +68,7 @@ picture {
   margin-bottom: 30px;
 }
 .right_side .auth_separator {
-  margin: 40px 0;
+  margin: 40px 0 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -86,7 +86,7 @@ picture {
   height: 1px;
   background-color: #a1a1a1;
   top: 50%;
-  left: -15px;
+  left: -13px;
   transform: translateY(-50%);
 }
 .right_side .auth_separator > span::after {
@@ -106,9 +106,9 @@ picture {
 }
 .auth_options .opt_btn {
   border-radius: 4px;
-  border: solid 1px #a1a1a1;
+  border: solid 1px #e6e9fa;
   padding: 7px 20px;
-  box-shadow: 0px 0px 5px -1px #a1a1a1;
+  box-shadow: 0px 0px 5px -1px #e6e9fa;
 }
 .auth_options .opt_btn a {
   display: flex;
@@ -123,11 +123,20 @@ picture {
 
 form .form_group {
   border-bottom: solid 1px #e6e9fa;
-  padding: 10px 0 10px 5px;
+  padding: 15px 0 5px 5px;
+  margin-bottom: 5px;
+  position: relative;
 }
 form .form_group label {
   color: #a1a1a1;
   font-size: 0.87em;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+form .form_group label.stay-up {
+  top: -8px;
 }
 
 .container {

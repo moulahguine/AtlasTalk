@@ -3,10 +3,21 @@
 form {
   .form_group {
     border-bottom: solid 1px $ghost-white;
-    padding: 10px 0 10px 5px;
-    label{
-        color: $text-gray;
-        font-size: 0.87em;
+    padding: 15px 0 5px 5px;
+    margin-bottom: 5px;
+    position: relative;
+
+    label {
+      color: $text-gray;
+      font-size: 0.87em;
+      position: absolute;
+      top: 15px;
+      left: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    label.stay-up {
+      top: -8px;
     }
   }
 }
