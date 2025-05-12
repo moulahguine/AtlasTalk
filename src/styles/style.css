@@ -51,45 +51,89 @@ picture {
   display: block;
 }
 
-.container {
-  background-color: #3949ab;
-  width: clamp(300px, 80vw, 1200px);
-  height: 700px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-.container .left_side {
+.left_side {
   grid-column: span 5;
 }
-.container .right_side {
+
+.right_side {
   background-color: #fff;
   width: clamp(300px, 50vw, 740px);
   border-radius: 30px 0 0 30px;
   padding: 100px;
   grid-column: span 7;
 }
-.container .right_side .co_title {
+.right_side .co_title {
   color: #525252;
   font-size: 1.5em;
   margin-bottom: 30px;
 }
-.container .right_side .auth_options {
+.right_side .auth_separator {
+  margin: 40px 0;
+  width: 100%;
   display: flex;
-  gap: 20px;
+  justify-content: center;
 }
-.container .right_side .auth_options .opt_btn {
+.right_side .auth_separator > span {
+  color: #a1a1a1;
+  text-transform: uppercase;
+  font-size: 0.84em;
+  position: relative;
+}
+.right_side .auth_separator > span::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background-color: #a1a1a1;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+}
+.right_side .auth_separator > span::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 1px;
+  background-color: #a1a1a1;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+}
+
+.auth_options {
+  display: flex;
+  gap: 40px;
+}
+.auth_options .opt_btn {
   border-radius: 4px;
   border: solid 1px #a1a1a1;
-  padding: 7px 10px;
-  box-shadow: 0px 0px 10px -3px #a1a1a1;
+  padding: 7px 20px;
+  box-shadow: 0px 0px 5px -1px #a1a1a1;
 }
-.container .right_side .auth_options .opt_btn a {
+.auth_options .opt_btn a {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 0.85em;
   color: #a1a1a1;
 }
-.container .right_side .auth_options .opt_btn a > img {
+.auth_options .opt_btn a > img {
   width: 17px;
+}
+
+form .form_group {
+  border-bottom: solid 1px #e6e9fa;
+  padding: 10px 0 10px 5px;
+}
+form .form_group label {
+  color: #a1a1a1;
+  font-size: 0.87em;
+}
+
+.container {
+  background-color: #3949ab;
+  width: clamp(300px, 80vw, 1200px);
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }/*# sourceMappingURL=style.css.map */

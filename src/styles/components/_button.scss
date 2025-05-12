@@ -1,0 +1,29 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as *;
+
+// start auth options "google" && "github"
+  .auth_options {
+    display: flex;
+    gap: 40px;
+    // start google and github btns
+    .opt_btn {
+      border-radius: 4px;
+      border: solid 1px $text-gray;
+      padding: 7px 20px;
+      box-shadow: 0px 0px 5px -1px $text-gray;
+      // links
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.85em;
+        color: $text-gray;
+        //logo
+        > img {
+          width: 17px;
+        }
+      }
+    }
+    // end google and github btns
+  }
+  // end auth options "google" && "github"

@@ -1,3 +1,5 @@
+@use "../abstracts/colors" as *;
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
@@ -15,4 +17,15 @@
   } @else {
     @warn "Column span `#{$span}` is out of range (1–12).";
   }
+}
+
+@mixin line-position($top, $left) {
+  content: "";
+  position: absolute;
+  width:8px;
+  height: 1px;
+  background-color: $text-gray;
+  top: $top;
+  left: $left;
+  transform: translateY(-50%);
 }
