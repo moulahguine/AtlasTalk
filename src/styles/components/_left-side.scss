@@ -2,5 +2,46 @@
 @use "../abstracts/mixins" as *;
 
 .left_side {
-  @include grid-column-span(5);
+    @include grid-column-span(5);
+    header.logo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 80px;
+        }
+        p{
+            font-size: 2em;
+            font-weight: bold;
+            color: $blue-400;
+        }
+    }
+    article {
+        margin: 0 40px;
+      h1 {
+          font-size: 1.9em;
+          color: $white-0;
+          span {
+              font-size: 2.125em;
+            }
+        }
+        p {
+            font-size: 0.75em;
+            color: $ghost-white;
+            position: relative;
+            z-index: 7;
+        }
+    }
+    .hero_image {
+        position: relative;
+        img {
+            position: absolute;
+            
+            height: min-content;
+            top: -150px;
+            left: 75px;
+            z-index: 5;
+            filter: blur(9px);
+        }
+    }
+    overflow: hidden;
 }

@@ -53,6 +53,47 @@ picture {
 
 .left_side {
   grid-column: span 5;
+  overflow: hidden;
+}
+.left_side header.logo {
+  display: flex;
+  align-items: center;
+}
+.left_side header.logo img {
+  width: 80px;
+}
+.left_side header.logo p {
+  font-size: 2em;
+  font-weight: bold;
+  color: #6f74dd;
+}
+.left_side article {
+  margin: 0 40px;
+}
+.left_side article h1 {
+  font-size: 1.9em;
+  color: #fff;
+}
+.left_side article h1 span {
+  font-size: 2.125em;
+}
+.left_side article p {
+  font-size: 0.75em;
+  color: #e6e9fa;
+  position: relative;
+  z-index: 7;
+}
+.left_side .hero_image {
+  position: relative;
+}
+.left_side .hero_image img {
+  position: absolute;
+  height: -moz-min-content;
+  height: min-content;
+  top: -150px;
+  left: 75px;
+  z-index: 5;
+  filter: blur(9px);
 }
 
 .right_side {
@@ -68,7 +109,7 @@ picture {
   margin-bottom: 30px;
 }
 .right_side .auth_separator {
-  margin: 40px 0 20px;
+  margin: 35px 0 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -109,6 +150,10 @@ picture {
   border: solid 1px #e6e9fa;
   padding: 7px 20px;
   box-shadow: 0px 0px 5px -1px #e6e9fa;
+  transition: all 0.3s ease-in-out;
+}
+.auth_options .opt_btn:hover {
+  background-color: #eee;
 }
 .auth_options .opt_btn a {
   display: flex;
@@ -119,6 +164,35 @@ picture {
 }
 .auth_options .opt_btn a > img {
   width: 17px;
+}
+
+.form_btn {
+  width: 100%;
+  background-color: #3949ab;
+  padding: 10px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.form_btn:hover {
+  background-color: #00227b;
+}
+
+.form-footer {
+  color: #a1a1a1;
+  font-size: 0.87em;
+  text-transform: none;
+  margin-top: 25px;
+}
+.form-footer a {
+  color: #3949ab;
+}
+.form-footer a:hover {
+  color: #00227b;
 }
 
 form .form_group {
@@ -137,6 +211,13 @@ form .form_group label {
 }
 form .form_group label.stay-up {
   top: -8px;
+}
+form .form_group input {
+  width: 100%;
+  font-size: 0.87em;
+  font-weight: 600;
+  color: #525252;
+  text-transform: none;
 }
 
 .container {

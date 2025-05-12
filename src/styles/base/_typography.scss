@@ -1,0 +1,14 @@
+@use "../abstracts/colors" as *;
+
+.form-footer {
+  color: $text-gray;
+  font-size: 0.87em;
+  text-transform: none;
+  margin-top: 25px;
+  a {
+    color: $violet-blue;
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}

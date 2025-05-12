@@ -2,28 +2,48 @@
 @use "../abstracts/mixins" as *;
 
 // start auth options "google" && "github"
-  .auth_options {
-    display: flex;
-    gap: 40px;
-    // start google and github btns
-    .opt_btn {
-      border-radius: 4px;
-      border: solid 1px $ghost-white;
-      padding: 7px 20px;
-      box-shadow: 0px 0px 5px -1px $ghost-white;
-      // links
-      a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 0.85em;
-        color: $text-gray;
-        //logo
-        > img {
-          width: 17px;
-        }
+.auth_options {
+  display: flex;
+  gap: 40px;
+  // start google and github btns
+  .opt_btn {
+    border-radius: 4px;
+    border: solid 1px $ghost-white;
+    padding: 7px 20px;
+    box-shadow: 0px 0px 5px -1px $ghost-white;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #eee;
+    }
+    // links
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85em;
+      color: $text-gray;
+      //logo
+      > img {
+        width: 17px;
       }
     }
-    // end google and github btns
   }
-  // end auth options "google" && "github"
+  // end google and github btns
+}
+// end auth options "google" && "github"
+
+.form_btn {
+  width: 100%;
+  background-color: $violet-blue;
+  padding: 10px;
+  color: $white-0;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $dark-blue;
+  }
+}

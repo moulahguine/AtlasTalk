@@ -1,4 +1,5 @@
 @use "../abstracts/colors" as *;
+@use "../base/typography" as *;
 
 form {
   .form_group {
@@ -14,10 +15,16 @@ form {
       top: 15px;
       left: 5px;
       transition: all 0.3s ease-in-out;
+      &.stay-up {
+        top: -8px;
+      }
     }
-
-    label.stay-up {
-      top: -8px;
+    input {
+      width: 100%;
+      font-size: 0.87em;
+      font-weight: 600;
+      color: $gray-300;
+      text-transform: none;
     }
   }
 }
