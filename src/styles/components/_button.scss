@@ -6,9 +6,6 @@
 .auth_options {
   display: flex;
   gap: 40px;
-  @media (max-width: $small-screen) {
-    flex-direction: column;
-  }
 
   // start google and github btns
   .opt_btn {
@@ -30,7 +27,6 @@
       @media (max-width: $small-desktop) {
         font-size: 0.6em;
         gap: 5px;
-        
       }
       //logo
       > img {

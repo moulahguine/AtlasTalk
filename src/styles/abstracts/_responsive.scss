@@ -3,6 +3,16 @@
 @use "./variables" as *;
 
 @mixin responsive-layout {
+  @media (max-width: $small-desktop) {
+    .auth_options {
+      .opt_btn {
+        a {
+          font-size: 0.6em;
+          gap: 5px;
+        }
+      }
+    }
+  }
   @media (max-width: $tablet) {
     .container {
       width: 100%;
@@ -60,6 +70,11 @@
       .main_side {
         padding: 40px 25px;
       }
+    }
+  }
+  @media (max-width: $small-screen) {
+    .auth_options {
+      flex-direction: column;
     }
   }
 }
