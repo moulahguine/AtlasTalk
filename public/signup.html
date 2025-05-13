@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Join AtlasChat – the ultimate platform for university students to chat, collaborate, and stay connected. Sign up now for seamless communication with your campus community"
+    />
+    <meta name="author" content="Mohamed Oulahguine" />
+    <title>AtlasChat | signup</title>
+    <link rel="stylesheet" href="/src/styles/style.css" />
+  </head>
+  <body>
+    <!-- start container -->
+    <section class="container" id="signup_section">
+      <!-- start left side  -->
+      <aside class="left_side aside_side">
+        <!-- start main logo page -->
+        <header class="logo">
+          <img src="/src/assets/images/art.png" alt="main logo" />
+          <p>CampusTalk</p>
+        </header>
+        <!-- end main logo page -->
+        <!-- start content page -->
+        <article class="content">
+          <h1 class="title">Welcome to <span>atlasChat</span></h1>
+          <p class="desc">
+            Your space to chat, collaborate, and stay connected with your
+            university friends.
+          </p>
+        </article>
+        <!-- end content page -->
+        <!-- start hero image -->
+        <div class="hero_image">
+          <img src="/src/assets/images/brushBlue.png" alt="hero uni logo" />
+        </div>
+        <!-- end hero image -->
+      </aside>
+      <!-- end left side  -->
+      <!-- start main sign up -->
+      <main class="right_side main_side">
+        <!-- start title (create account) -->
+        <div class="co_title">
+          <h1>create account</h1>
+        </div>
+        <!-- end title (create account) -->
+        <!-- start auth options "google" && "github" -->
+        <div class="auth_options" id="social-auth">
+          <!-- start google btn -->
+          <div class="google_btn opt_btn" id="google-btn">
+            <a href="#">
+              <img src="/src/assets/icons/search.png" alt="google" /> continue
+              with google
+            </a>
+          </div>
+          <!-- end google btn -->
+          <!-- start github btn -->
+          <div class="github_btn opt_btn" id="github-btn">
+            <a href="#">
+              <img src="/src/assets/icons/github.png" alt="github" /> continue
+              with github
+            </a>
+          </div>
+          <!-- end github btn -->
+        </div>
+        <!-- end auth options "google" && "github" -->
+        <!-- start auth separator -->
+        <div class="auth_separator" id="signup-or-separator">
+          <span>or</span>
+        </div>
+        <!-- end auth separator -->
+        <!-- start signup form -->
+        <form class="auth_form" id="signup-form" action="" method="POST">
+          <!-- start userName input -->
+          <div class="form_group username">
+            <label for="username">username</label>
+            <input type="text" id="userName" name="username" required />
+          </div>
+          <!-- end userName input -->
+          <!-- start email input -->
+          <div class="form_group email">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <!-- end email input -->
+          <!-- start password input -->
+          <div class="form_group password">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <!-- end password input -->
+          <!-- start submit form -->
+          <button type="submit" class="submit-signup-btn form_btn">
+            create account
+          </button>
+          <!-- end submit form -->
+          <!-- start form footer -->
+          <p class="form-footer">
+            Already have an account?
+            <a href="/public/login.html" class="form-link">login</a>
+          </p>
+          <!-- end form footer -->
+        </form>
+        <!-- start signup form -->
+      </main>
+      <!-- end main sign up -->
+    </section>
+    <!-- end container -->
+    <script src="/src/main.js" defer></script>
+  </body>
+</html>

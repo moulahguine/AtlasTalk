@@ -29,6 +29,8 @@
       color: $text-gray;
       @media (max-width: $small-desktop) {
         font-size: 0.6em;
+        gap: 5px;
+        
       }
       //logo
       > img {

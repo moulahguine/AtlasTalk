@@ -9,41 +9,17 @@
       content="Join AtlasChat – the ultimate platform for university students to chat, collaborate, and stay connected. Sign up now for seamless communication with your campus community"
     />
     <meta name="author" content="Mohamed Oulahguine" />
-    <title>AtlasChat | signup</title>
+    <title>AtlasChat | login</title>
     <link rel="stylesheet" href="/src/styles/style.css" />
   </head>
   <body>
     <!-- start container -->
-    <section class="container" id="signup_section">
-      <!-- start left side  -->
-      <aside class="left_side">
-        <!-- start main logo page -->
-        <header class="logo">
-          <img src="/src/assets/images/art.png" alt="main logo" />
-          <p>CampusTalk</p>
-        </header>
-        <!-- end main logo page -->
-        <!-- start content page -->
-        <article class="content">
-          <h1 class="title">Welcome to <span>atlasChat</span></h1>
-          <p class="desc">
-            Your space to chat, collaborate, and stay connected with your
-            university friends.
-          </p>
-        </article>
-        <!-- end content page -->
-        <!-- start hero image -->
-        <div class="hero_image">
-          <img src="/src/assets/images/brushBlue.png" alt="hero uni logo" />
-        </div>
-        <!-- end hero image -->
-      </aside>
-      <!-- end left side  -->
-      <!-- start main sign up -->
-      <main class="right_side">
-        <!-- start title (create account) -->
+    <section class="container" id="login_section">
+      <!-- start main login -->
+      <main class="left_side main_side">
+        <!-- start title -->
         <div class="co_title">
-          <h1>create account</h1>
+          <h1 style="max-width: 10em">Welcome Back to CampusChat</h1>
         </div>
         <!-- end title (create account) -->
         <!-- start auth options "google" && "github" -->
@@ -67,18 +43,12 @@
         </div>
         <!-- end auth options "google" && "github" -->
         <!-- start auth separator -->
-        <div class="auth_separator" id="signup-or-separator">
+        <div class="auth_separator" id="login-or-separator">
           <span>or</span>
         </div>
         <!-- end auth separator -->
-        <!-- start signup form -->
-        <form class="auth_form" id="signup-form" action="" method="POST">
-          <!-- start userName input -->
-          <div class="form_group username">
-            <label for="username">username</label>
-            <input type="text" id="userName" name="username" required />
-          </div>
-          <!-- end userName input -->
+        <!-- start login form -->
+        <form class="auth_form" id="login-form" action="" method="POST">
           <!-- start email input -->
           <div class="form_group email">
             <label for="email">email</label>
@@ -91,21 +61,43 @@
             <input type="password" id="password" name="password" required />
           </div>
           <!-- end password input -->
-          <!-- start submit form -->
-          <button type="submit" class="submit-signup-btn form_btn">
-            create account
-          </button>
-          <!-- end submit form -->
+          <!-- start login_btn form -->
+          <button type="submit" class="submit-login-btn form_btn">login</button>
+          <!-- end login_btn form -->
           <!-- start form footer -->
           <p class="form-footer">
-            Already have an account?
-            <a href="#" class="form-link">login</a>
+            Don't have an account?
+            <a href="/public/signup.html" class="form-link">signup</a>
           </p>
           <!-- end form footer -->
         </form>
-        <!-- start signup form -->
+        <!-- end login form -->
       </main>
       <!-- end main sign up -->
+      <!-- start right side  -->
+      <aside class="right_side aside_side">
+        <!-- start main logo page -->
+        <header class="logo">
+          <img src="/src/assets/images/art.png" alt="main logo" />
+          <p>CampusTalk</p>
+        </header>
+        <!-- end main logo page -->
+        <!-- start content page -->
+        <article class="content">
+          <h1 class="title">Welcome to <span>atlasChat</span></h1>
+          <p class="desc">
+            Your space to chat, collaborate, and stay connected with your
+            university friends.
+          </p>
+        </article>
+        <!-- end content page -->
+        <!-- start hero image -->
+        <div class="hero_image">
+          <img src="/src/assets/images/brushBlue.png" alt="hero uni logo" />
+        </div>
+        <!-- end hero image -->
+      </aside>
+      <!-- end left side  -->
     </section>
     <!-- end container -->
     <script src="/src/main.js" defer></script>

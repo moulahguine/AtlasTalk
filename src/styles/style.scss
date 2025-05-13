@@ -4,20 +4,17 @@
 // Import abstracts
 @forward "abstracts/colors";
 @forward "abstracts/variables";
-@forward "abstracts/functions";
 @forward "abstracts/mixins";
 
 // Import components
-@forward "components/left-side";
-@forward "components/right-side";
 @forward "components/button";
 @forward "components/form";
-@forward "components/modal";
 
 // Import layout
 @forward "layout/grid";
 
 // Import pages
+@forward "pages/log&&sign";
 @forward "pages/chat";
 @forward "pages/login";
 @forward "pages/signup";
