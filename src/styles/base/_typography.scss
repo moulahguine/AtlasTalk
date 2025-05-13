@@ -1,14 +1,65 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+.co_title {
+  color: $gray-300;
+  font-size: $font-md;
+  margin-bottom: 30px;
+}
+
+.auth_separator > span {
+  font-size: $font-sm;
+  color: $text-gray;
+  text-transform: uppercase;
+}
+
+.aside_side {
+  header.logo p {
+    font-size: $font-xxl;
+    font-weight: $font-bold;
+    color: $blue-400;
+  }
+
+  article {
+    h1 {
+      color: $white-0;
+      font-size: $font-lg;
+      span {
+        font-size: $font-xl;
+      }
+    }
+
+    p {
+      font-size: $font-xs;
+      color: $ghost-white;
+      position: relative;
+      z-index: 7;
+    }
+  }
+}
+
+.form_group {
+  label {
+    color: $text-gray;
+    font-size: $font-sm;
+  }
+  input {
+    font-size: $font-sm;
+    font-weight: $font-bold;
+    color: $gray-300;
+    text-transform: none;
+  }
+}
 
 .form-footer {
   color: $text-gray;
-  font-size: 0.87em;
+  font-size: $font-sm;
   text-transform: none;
   margin-top: 25px;
   a {
-      color: $violet-blue;
-      &:hover {
-          color: $dark-blue;
-        }
+    color: $violet-blue;
+    &:hover {
+      color: $dark-blue;
     }
+  }
 }

@@ -4,20 +4,4 @@
   .left_side {
     border-radius: 0 30px 30px 0;
   }
-  @media (max-width: $tablet) {
-    .left_side {
-      order: 2;
-      border-radius: 20px 20px 0 0;
-    }
-    .right_side {
-      order: 1;
-    }
-  }
-  .right_side {
-    .hero_image {
-      img {
-        left: -100px;
-      }
-    }
-  }
 }

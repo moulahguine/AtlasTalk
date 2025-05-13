@@ -1,20 +1,17 @@
-// Import base styles
-@forward "base/reset";
+@use "abstracts/colors";
+@use "abstracts/mixins";
+@use "abstracts/variables";
+@use "abstracts/responsive" as *;
 
-// Import abstracts
-@forward "abstracts/colors";
-@forward "abstracts/variables";
-@forward "abstracts/mixins";
+@use "base/reset";
+@use "base/typography";
 
-// Import components
-@forward "components/button";
-@forward "components/form";
+@use "components/button";
+@use "components/form";
 
-// Import layout
-@forward "layout/grid";
+@use "pages/log-sign";
+@use "pages/chat";
+@use "pages/login";
+@use "pages/signup";
 
-// Import pages
-@forward "pages/log&&sign";
-@forward "pages/chat";
-@forward "pages/login";
-@forward "pages/signup";
+@include responsive-layout;
