@@ -63,3 +63,19 @@ Watch the full project in action:
 - Backend deployed on Render with environment variables:
   - `PORT`
   - `MONGO_URI` (MongoDB Atlas connection string)
+
+---
+
+##  Acknowledgments
+
+> This project began as a frontend developer's experiment to understand backend fundamentals and full-stack workflows. Huge thanks to the open source community for guidance and tools
+
+---
+
+##  Contact
+
+- **Creator:** Mohamed Oulahguine
+- **GitHub:** [@yourgithub](https://www.linkedin.com/in/moulahguine/)
+- **Email:** mohamedoulahguine@gmail.com
+
+---
