@@ -18,7 +18,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
 
     if (response.ok) {
       alert("Login successful!");
-      window.location.href = "/public/chat.html"; // <=== This must be here
+      window.location.href = "/public/chat.html"; 
     } else {
       alert(data.message || "Login failed");
     }
