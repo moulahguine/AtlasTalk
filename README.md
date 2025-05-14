@@ -75,7 +75,7 @@ Watch the full project in action:
 ##  Contact
 
 - **Creator:** Mohamed Oulahguine
-- **GitHub:** [@yourgithub](https://www.linkedin.com/in/moulahguine/)
+- **linkedin:** [@myLinkedIn](https://www.linkedin.com/in/moulahguine/)
 - **Email:** mohamedoulahguine@gmail.com
 
 ---
