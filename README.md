@@ -10,9 +10,11 @@ AtlasChat is a modern, responsive web application built to connect university st
 
 ### Login Page
 ![Login Screenshot](./src/assets/images/loginLS.png)
+![Login Screenshot](./src/assets/images/loginPS.png)
 
 ### Signup Page
-![Signup Screenshot](./screenshots/signup.png)
+![signup Screenshot](./src/assets/images/signupLS.png)
+![signup Screenshot](./src/assets/images/signupPS.png)
 
 ---
 
