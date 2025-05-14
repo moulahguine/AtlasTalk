@@ -21,7 +21,7 @@ AtlasChat is a modern, responsive web application built to connect university st
 ## Demo Video
 
 Watch the full project in action:  
-[Watch AtlasChat Demo](https://your-video-link-here.com)
+[Watch AtlasChat Demo](./src/assets/images/videoDemo.mp4)
 
 ---
 
