@@ -3,7 +3,7 @@
 AtlasChat is a modern, responsive web application built to connect university students in real-time. Designed with a user-friendly interface and clean aesthetic, it offers sign-up, login, and protected chat access as part of an ongoing journey to explore full-stack web development.
 
 > Created by a frontend developer expanding into backend development for the first time.
-
+> [app link](https://moulahguine.github.io/AtlasTalk/public/signup.html)
 ---
 
 ## Screenshots
