@@ -124,12 +124,6 @@ picture {
   font-size: 0.85em;
   color: #a1a1a1;
 }
-@media (max-width: 1024px) {
-  .auth_options .opt_btn a {
-    font-size: 0.6em;
-    gap: 5px;
-  }
-}
 .auth_options .opt_btn a > img {
   width: 17px;
 }

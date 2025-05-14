@@ -11,6 +11,11 @@
     <meta name="author" content="Mohamed Oulahguine" />
     <title>AtlasChat | signup</title>
     <link rel="stylesheet" href="/AtlasTalk/src/styles/style.css" />
+    <link
+      rel="icon"
+      href="/AtlasTalk/src/assets/icons/favicon.png"
+      type="image/png"
+    />
   </head>
   <body>
     <!-- start container -->
@@ -34,7 +39,10 @@
         <!-- end content page -->
         <!-- start hero image -->
         <div class="hero_image">
-          <img src="/AtlasTalk/src/assets/images/brushBlue.png" alt="hero uni logo" />
+          <img
+            src="/AtlasTalk/src/assets/images/brushBlue.png"
+            alt="hero uni logo"
+          />
         </div>
         <!-- end hero image -->
       </aside>
@@ -72,7 +80,12 @@
         </div>
         <!-- end auth separator -->
         <!-- start signup form -->
-        <form class="auth_form" id="signup-form" action="" method="POST">
+        <form
+          class="auth_form"
+          id="signup-form"
+          action="http://localhost:3000/api/signup"
+          method="POST"
+        >
           <!-- start userName input -->
           <div class="form_group username">
             <label for="username">username</label>
@@ -99,7 +112,7 @@
           <!-- start form footer -->
           <p class="form-footer">
             Already have an account?
-            <a href="/AtlasTalk/public/login.html" class="form-link">login</a>
+            <a href="/AtlasTalk/public/login.html" class="form-link">log in</a>
           </p>
           <!-- end form footer -->
         </form>
@@ -108,6 +121,8 @@
       <!-- end main sign up -->
     </section>
     <!-- end container -->
-    <script src="/AtlasTalk/src/main.js" defer></script>
+    <script src="/AtlasTalk/src/main.js"></script>
+    <script src="/AtlasTalk/src/pages/signup.js" defer></script>
+    <script src="/AtlasTalk/form.js"></script>
   </body>
 </html>
